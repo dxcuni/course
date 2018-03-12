@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> - Spartans Challenge -</title>
+    <link href="../css/StyleSheet.css" rel="stylesheet" type="text/css" />    
+    <link  rel="stylesheet"  href="../css/bootstrap.min.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="../js/quizComm.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid" style="width:50%" >
+        <header class="page-header">
+            <!--<h1>Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge       </h1>-->       
+               <div style="position: relative; top: 0px; left: 0px; padding-left: 0; background-color: #000000;">
+                  <div style="position: relative; top: 10px; left: 0px; padding-left: 20; background-color: #000000">
+                    <img src="../image/dxc_logo.jpg" >
+                      <span id="spHeader" style="color: white; font-size:24px ">
+                          <b>Spartans Challenge</b>
+                    </span>
+                          
+                  </div>
+                  <!--<div style="position:absolute; top: 0px; left: 100px; padding-left: 0; background-color: #000000;">-->
+                   
+                  <!--</div>-->
+              </div>
+       </header>
+        <!-- Front Page Start -->
+        <div class="row" id="divFrontPage" >
+            <div class="col-sm-12">
+                <div class="well well-sm">
+                        <div class="row">
+                            <div class="col-md-6" style="width:20%" >
+                                <img src="../image/Sparta.JPG" class="img-rounded img-responsive" /> 
+                            </div>
+                            <div class="col-md-6 text-center left" >
+                                <h1>Digital Transformation</h1>
+                            </div>
+                        </div>
+                       <P> <h3>
+                           The customer realizes that their legacy bussiness model, aging technology, and work force models are not possitioned to keep up with the copetition. The customer has contacted you to help them come up with a digital trasformation strategy that will make and keep them competitive.
+
+                           </h3>
+
+                       </P>
+                    <p><h3>To check your knowlege click on <b>Take The Challenge.</b></p></h3>
+
+                    <button class="btn btn-primary center-block" style="background-color:black;" id="btnTakeChale" ><b>Take The Challenge</b></button>
+                </div>
+               
+            </div>
+        </div> 
+        <!-- Front Page END -->
+
+        <!-- Quiz Question Satrt --->
+
+        <div class="row" id="divQuiz" style="display:none; opacity:.98; z-index:-1;opacity:1" >
+            <div class="col-sm-12">
+               <div class="well well-sm">
+                   
+                   <div class="row">
+                       <div class="col-sm-12">                
+                        <P> <h3>
+                        What Does Digital Transformation means to our clients? Select all that apply.
+                            </h3>
+                        </P>
+                       </div> 
+                      </div>  
+                    
+                     <div class="row"  >   
+                            <div class="col-lg-12">
+                                <div class="table-hover" style="outline-style:none;cursor:pointer;border-radius:5px; ">
+                                <div class="row" >                                    
+                                        <div class="col-md-1" style="padding-top:8px; width:31px;" >                            
+                                            <input id="question1" type="checkbox" enabled="" unchecked="" role="checkbox" style="cursor: pointer;  left: 0px; top: 0px; width: 20px; height: 20px; position: relative; border-radius: 0px;" >
+                                       </div>
+                                       <div class="col-sm-1 left" style="padding-top:0px; width:10px; "  > <h4>A)</h4>
+                                       </div>
+                                       <div class="col-md-11 left" >
+                                             <h4>Customer expriences will become highly automated to allow customers access to services anytime and anywhere.</h4>
+                                       </div>
+                                </div>
+                                </div>
+                            </div>
+                      </div>
+                         <div class="row" >   
+                            <div class="col-lg-12">
+                                <div class="table-hover" style="outline-style:none;cursor:pointer;border-radius:5px; ">
+                                <div class="row" >                                    
+                                        <div class="col-md-1" style="padding-top:8px; width:31px;" >                            
+                                            <input id="question2" type="checkbox" enabled="" unchecked="" role="checkbox" style="cursor: pointer;  left: 0px; top: 0px; width: 20px; height: 20px; position: relative; border-radius: 0px;" >
+                                       </div>
+                                       <div class="col-sm-1 left" style="padding-top:0px; width:10px; "  > <h4>B)</h4>
+                                       </div>
+                                       <div class="col-md-11 left" >
+                                             <h4>Cost to implement customer experiences will be for lower as they become more intelligent and contextually aware.</h4>
+                                       </div>
+                                </div>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="row" >   
+                            <div class="col-lg-12">
+                                <div class="table-hover" style="outline-style:none;cursor:pointer;border-radius:5px; ">
+                                <div class="row" >                                    
+                                        <div class="col-md-1" style="padding-top:8px; width:31px;" >                            
+                                            <input id="question3" type="checkbox" enabled="" unchecked="" role="checkbox" style="cursor: pointer;  left: 0px; top: 0px; width: 20px; height: 20px; position: relative; border-radius: 0px;" >
+                                       </div>
+                                       <div class="col-sm-1 left" style="padding-top:0px; width:10px; "  > <h4>C)</h4>
+                                       </div>
+                                       <div class="col-md-11 left" >
+                                             <h4>Business processes and operating models will become a thing of the past as digital automation replaces archaic technology.</h4>
+                                       </div>
+                                </div>
+                               </div>
+                            </div>
+                      </div>
+                       <div class="row" >   
+                            <div class="col-lg-12">
+                                <div class="table-hover" style="outline-style:none;cursor:pointer;border-radius:5px; ">
+                                <div class="row" >                                    
+                                       <div class="col-md-1" style="padding-top:8px; width:31px;" >                            
+                                            <input id="question4" type="checkbox" enabled="" unchecked="" role="checkbox" style="cursor: pointer;  left: 0px; top: 0px; width: 20px; height: 20px; position: relative; border-radius: 0px;" >
+                                       </div>
+                                       <div class="col-sm-1 left" style="padding-top:0px; width:10px; "  > <h4>D)</h4>
+                                       </div>
+                                       <div class="col-md-11 left" >
+                                             <h4>Business models, products, and services will become "customer centric," "outside-in," and proactive, centring around the customer.</h4>
+                                       </div>
+                                </div>
+                                </div>
+                            </div>
+                      </div>
+<!--Model Define start -->
+                   <div class="close modal" id="divIncorrectAnsware" style="width:40%; margin-left:30%; z-index:999; "  >                                              
+                                                       <div class="col-sm-12  text-center modal-content"  style="border:dotted; background-color:aqua;  "  >
+                                                              <h4 id="Message">  Incorrect - Click Submit again or press 'y' to continue.<br /></h4>
+                                                       </div>                                                
+                   </div>  
+<!--Model Define END -->                       
+                        <div class="row" >   
+                            <div class="col-lg-12">   
+
+                                    
+                                
+                                <br /><br />                               
+                                <div class="row" >  
+                                       <div class="col-md-12 left" >
+                                             <h4><button class="btn btn-primary center-block" style="background-color:black;" id="btnSubmit" ><b>Submit</b></button></h4>
+                                       </div>
+                                </div>                                
+                            </div>
+                      </div>
+                   
+
+                </div>
+            </div>
+        </div>
+        <!-- Quiz Question END --->
+
+                <!-- Correct Answare Page START --->
+		<div class="row" id="divCorretAnsPage"  style="display:none" >
+            <div class="col-sm-12">
+                <div class="well well-sm">
+                        <div class="row">
+                            <div class="col-md-3" style="width:20%" >
+                                <img src="../image/Sparta.JPG" class="img-rounded img-responsive" /> 
+                            </div>
+                            <div class="col-md-9 text-left left" >
+                                <p><h3>You have successfully completed the Spartans Challenge.</h3></p>
+                            </div>
+                        </div>
+                       <h3><P> 
+                           For more inforamtion:</P><p>
+						   Learn more about the DXC's osition on <br />                         
+                       
+                    <a href="https://whatwesell.dxc.com/dxc/client-messaging/digital-enterprise/"> Transforming to a Digital Enterprise.</a></p></h3>                   
+                </div>               
+            </div>
+        </div> 
+    <!-- Correct Answare Page END --->
+     
+        <!-- Correct Incorrect Page START --->
+		<div class="row" id="divIncorrectAnsPage" style="display:none" >
+            <div class="col-sm-12">
+                <div class="well well-sm">
+                        
+                       <P> <h3>
+                           You did not answer the question correctly.
+                           </h3>
+                       </P>
+                    <p><h4> 1. Review DXC's position on<a href="https://whatwesell.dxc.com/dxc/client-messaging/digital-enterprise/"> Transforming to a Digital Enterprise.</a><br>
+						 2. Retake this Spartans Challenge.
+					</p></h4>                   
+					 <div class="row" >  
+                          <div class="col-md-12 left" >
+                           <h4><button class="btn btn-primary center-block" style="background-color:black;" id="btnRetake" ><b>Retake</b></button></h4>
+                          </div>
+                      </div> 
+                </div>  
+				
+            </div>
+        </div> 
+    <!-- Correct Incorrect Page END --->
+
+        
+
+
+
+
+         <footer class="panel-footer>
+            <!--<h1>Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge  Demo Spartans Challenge       </h1>-->       
+               <div style="position: relative; top: 0px; left: 0px; padding-left: 0; background-color:white;">
+                  <div style="position: relative; top: 10px; left: 0px; padding-left: 20; background-color: white">
+                    <img src="../image/footerlogo.jpg" >
+                      <span style="color:black; font-size:20px;" class="pull-right" >
+                       <h5><b>DXC Property and Confidential</b></h5>
+                    </span>
+                          
+                  </div>
+                  <!--<div style="position:absolute; top: 0px; left: 100px; padding-left: 0; background-color: #000000;">-->
+                   
+                  <!--</div>-->
+              </div>
+       </footer>
+        
+
+
+    </div>
+
+</body>
+</html>
