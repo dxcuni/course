@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
 
     
     $("#btnTakeChale").click(function () {
@@ -61,19 +61,25 @@
         {
            
             $('#Message').text('Correct - Click Submit again or press \'y\' to continue.');
+            $('#modelContent').css("background-color", "#47d147");
 
         }
         else if ((document.getElementById("question1").checked == false) && (document.getElementById("question2").checked == false) && (document.getElementById("question3").checked == false) && (document.getElementById("question4").checked == false))
         {
-            $('#Message').text('You must answare the questiob before continuing.');
+            $('#Message').text('You must answer the question before continuing.');
+            $('#modelContent').css("background-color", "#FFFF66");
         }
         else {
             
             $('#Message').text('Incorrect - Click Submit again or press \'y\' to continue.');
+            $('#modelContent').css("background-color", "#ff4d4d");
 
         }
 
         modal.style.display = "block";
+       // $("#divQuiz").css("display", "none");
+       
+        
     };
 
     // When the user clicks on <span> (x), close the modal
