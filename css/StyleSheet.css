@@ -1,4 +1,4 @@
-﻿body {
+body {
   
   font-family:GT_Walsheim_Pro_Regular;
 
@@ -13,49 +13,45 @@ url('GT-Walsheim-Pro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */}
 
 .table-hover:hover{
    background-color:gray;
+   
 }
 
 
-.modal {
-    display: block; /* Hidden by default */
-    position: center; /* Stay in place */
-    z-index: 100; /* Sit on top */    
+/* The Modal (background) */
+.modal1 {
+     display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 22%; /* Location of the box */
     left: 0;
-    top: 0;    
-    padding-top:20%;
+    top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-/* Modal Content/Box */
-.modal-content {
+
+/* Modal Content */
+.modal-content1 {
     background-color: #fefefe;
-    margin: 20% auto; /* 15% from the top and centered */
-    padding: 0px;
-    position:fixed;
-    border: 0px hidden #fff;
-    width: 8%; /* Could be more or less, depending on screen size */
-    
+    margin: auto;
+    padding: 2px;
+    border: 1px solid #888;
+    width: 100%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: #000;
     float: right;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-
-/* The Close Button */
-
-
